@@ -28,5 +28,5 @@ public class ProductController {
     @GetMapping
     public Page<ProductDTO> findAll(Pageable pageable) {
         return service.findAll(pageable);
-    }
+    } 
 }
