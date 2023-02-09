@@ -7,7 +7,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "tb_order_item")
-class OrderItem {
+public class OrderItem {
    @EmbeddedId
    private OrderItemPK id = new OrderItemPK();
     private Integer quantity;
