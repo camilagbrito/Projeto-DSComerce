@@ -1,7 +1,7 @@
-import ButtonInverse from "../../components/ButtonInverse";
-import ButtonPrimary from "../../components/ButtonPrimary";
-import HeaderClient from "../../components/HeaderClient";
-import ProductDetailsCard from "../../components/ProductDetailsCard";
+import ButtonInverse from '../../components/ButtonInverse';
+import ButtonPrimary from '../../components/ButtonPrimary';
+import HeaderClient from '../../components/HeaderClient';
+import ProductDetailsCard from '../../components/ProductDetailsCard';
 import './styles.css';
 
 export default function ProductDetails(){
