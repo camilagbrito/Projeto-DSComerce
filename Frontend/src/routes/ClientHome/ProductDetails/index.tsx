@@ -1,12 +1,12 @@
 import './styles.css';
-import ButtonInverse from '../../components/ButtonInverse';
-import ButtonPrimary from '../../components/ButtonPrimary';
-import ProductDetailsCard from '../../components/ProductDetailsCard';
-import * as productService from '../../services/product-service';
+import ButtonInverse from '../../../components/ButtonInverse';
+import ButtonPrimary from '../../../components/ButtonPrimary';
+import ProductDetailsCard from '../../../components/ProductDetailsCard';
+import * as productService from '../../../services/product-service';
 import { useNavigate, useParams } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
-import { ProductDTO } from '../../models/product';
+import { ProductDTO } from '../../../models/product';
 
 
 
