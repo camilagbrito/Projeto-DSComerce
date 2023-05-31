@@ -25,7 +25,8 @@ export default function ProductDetails(){
       .then(response => {
         console.log(response.data);
         setProduct(response.data);
-       }).catch(() => {
+       })
+       .catch(() => {
         navigate("/");
        });
     }, []);
