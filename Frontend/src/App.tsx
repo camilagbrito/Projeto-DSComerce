@@ -32,7 +32,7 @@ export default function App() {
             />
           </Route>
           <Route path="/admin/" element={
-            <PrivateRoute>
+            <PrivateRoute roles={['ROLE_ADMIN']}>
               <Admin/>
             </PrivateRoute>
           }>
