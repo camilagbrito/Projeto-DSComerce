@@ -1,9 +1,14 @@
 import './styles.css';
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import { CredentialsDTO } from '../../../models/auth';
 import * as authService from "../../../services/auth-service";
+import { useNavigate } from 'react-router-dom';
+import { ContextToken } from '../../../utils/context-token';
 
 export default function Login(){
+
+    const navigate = useNavigate();
+    const {setContextTokenPayload} = useContext(ContextToken);
 
     const [formData, setFormData] = useState<CredentialsDTO>({
         username: '',
@@ -14,7 +19,9 @@ export default function Login(){
         event.preventDefault();
         authService.loginRequest(formData)
         .then(response =>{
-            authService.saveAcessToken(response.data.access_token)
+            authService.saveAcessToken(response.data.access_token);
+            setContextTokenPayload(authService.getAcessTokenPayload());  
+            navigate("/cart");
           })
         .catch(error => {console.log("Erro no login", error);
         })
