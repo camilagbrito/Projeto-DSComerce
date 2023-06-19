@@ -7,6 +7,7 @@ import { useEffect, useState } from 'react';
 import { ProductDTO } from '../../../models/product';
 
 
+
 type QueryParams ={
   page:number;
   name: string;
@@ -25,6 +26,7 @@ export default function Catalog() {
   });
 
   useEffect(() => {
+
     productService.findPageRequest(queryParams.page, queryParams.name)
     .then(response => { 
       const nextPage = response.data.content;
