@@ -7,7 +7,7 @@ import { ContextCartCount } from "../../../utils/context-cart";
 
 export default function Cart() {
   const [cart, setCart] = useState<OrderDTO>(cartService.getCart());
-  const {contextCartCount, setContextCartCount} = useContext(ContextCartCount);
+  const {setContextCartCount} = useContext(ContextCartCount);
 
   function handleClearClick(){
     cartService.clearCart();
