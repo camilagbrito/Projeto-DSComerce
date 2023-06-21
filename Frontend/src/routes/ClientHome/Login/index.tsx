@@ -68,7 +68,7 @@ export default function Login() {
               </div>
               <div>
                 <FormInput
-                 {...formData.password}
+                  {...formData.password}
                   className="dsc-form-control"
                   onChange={handleInputChange}
                 />
