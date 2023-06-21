@@ -8,3 +8,4 @@ export default function FormInput(props: any){
         <input {...inputProps} />
     )
 }
+
