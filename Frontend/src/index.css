@@ -265,6 +265,17 @@ nav a {
   height: unset;
 }
 
+.dsc-form-global-error{
+  border: 1px solid var(--dsc-color-error);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 5px 10px;
+  font-size: 12px;
+  color: var(--dsc-color-error);
+  border-radius: 5px;
+}
+
 .dsc-textarea {
   resize: none;
   height: 128px;
